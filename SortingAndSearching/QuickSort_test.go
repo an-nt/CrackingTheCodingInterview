@@ -4,9 +4,9 @@ import (
 	"testing"
 )
 
-func TestBubbleSort(t *testing.T) {
+func TestQuickSort(t *testing.T) {
 	for i, testcase := range ArrayTestCases {
-		BubbleSort(testcase)
+		QuickSort(testcase, 0, len(testcase)-1)
 
 		if !IsAscendOrder(testcase) {
 			t.Errorf("Test case No.%d failed: output = %d", i, testcase)
