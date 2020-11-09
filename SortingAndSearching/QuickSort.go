@@ -1,4 +1,4 @@
-package SortingAndSearching
+package sortingandsearching
 
 //QuickSort sorts an array with the complexity of O(N*logN) for average cases and O(N^2) for the worst
 //left and right variables indicate the first and the last element of the unsorted array

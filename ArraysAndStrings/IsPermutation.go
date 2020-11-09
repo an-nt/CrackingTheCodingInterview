@@ -1,4 +1,4 @@
-package ArraysAndStrings
+package arraysandstrings
 
 func IsPermutation(str1 string, str2 string) bool {
 	if len(str1) != len(str2) {

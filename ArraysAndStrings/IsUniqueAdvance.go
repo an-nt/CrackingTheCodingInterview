@@ -1,4 +1,4 @@
-package ArraysAndStrings
+package arraysandstrings
 
 // IsUniqueAdvance uses no additional data structure
 func IsUniqueAdvance(str string) bool {

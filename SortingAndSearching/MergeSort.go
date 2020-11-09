@@ -1,4 +1,4 @@
-package SortingAndSearching
+package sortingandsearching
 
 //MergeSort divides an array into two halves until they become one-element arrays
 //merger then merges two corresponding sub-arrays into a sorted array

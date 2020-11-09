@@ -1,6 +1,8 @@
-package SortingAndSearching
+package sortingandsearching
 
+//BinarySearch returns the index of the value
 //Assume that the array has been sorted in ascending order
+//It returns -1 when the array does not contain the value
 func BinarySearch(Arr []int, value int) (index int) {
 	if len(Arr) == 0 {
 		return -1

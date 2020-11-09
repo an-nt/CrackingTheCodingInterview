@@ -1,4 +1,4 @@
-package SortingAndSearching
+package sortingandsearching
 
 func SelectionSort(Arr []int) {
 	if len(Arr) < 2 {

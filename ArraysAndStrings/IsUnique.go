@@ -1,4 +1,4 @@
-package ArraysAndStrings
+package arraysandstrings
 
 func IsUnique(str string) bool {
 	// ASCII consists of 128 characters

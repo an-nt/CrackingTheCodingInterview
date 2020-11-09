@@ -1,4 +1,4 @@
-package SortingAndSearching
+package sortingandsearching
 
 func InsertionSort(Arr []int) {
 	if len(Arr) < 2 {

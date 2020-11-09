@@ -1,4 +1,4 @@
-package ArraysAndStrings
+package arraysandstrings
 
 import "testing"
 

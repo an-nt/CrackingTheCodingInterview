@@ -1,4 +1,4 @@
-package SortingAndSearching
+package sortingandsearching
 
 func IsAscendOrder(Arr []int) bool {
 	if len(Arr) < 2 {

@@ -1,4 +1,4 @@
-package SortingAndSearching
+package sortingandsearching
 
 import (
 	"testing"
