@@ -4,14 +4,14 @@ func IsPermutation(str1 string, str2 string) bool {
 	if len(str1) != len(str2) {
 		return false
 	}
-	if SortString(str1) != SortString(str2) {
+	if SortStringBubble(str1) != SortStringBubble(str2) {
 		return false
 	}
 	return true
 }
 
-//SortString uses bubble sort algorithm
-func SortString(str string) string {
+//SortStringBubble uses bubble sort algorithm
+func SortStringBubble(str string) string {
 	byteSlice := []byte(str)
 	for i := 0; i < len(byteSlice)-1; i++ {
 		for j := 0; j < len(byteSlice)-1-i; j++ {
@@ -21,4 +21,8 @@ func SortString(str string) string {
 		}
 	}
 	return string(byteSlice)
+}
+
+func SortStringQuickSort(str string) string {
+	return ""
 }
