@@ -33,7 +33,7 @@ func TestSortString(t *testing.T) {
 	}
 
 	for _, testcase := range testcases {
-		output := SortString(testcase.input)
+		output := SortStringBubble(testcase.input)
 		if output != testcase.expect {
 			t.Errorf("Want %s, Have %s", testcase.expect, output)
 		}
