@@ -79,18 +79,9 @@ var removeDupsTestCases = []removeDupsTestCase{
 func TestRemoveDups(t *testing.T) {
 	for index, testcase := range removeDupsTestCases {
 		RemoveDups(testcase.input)
-		outputNode := testcase.input.Head
-		expectNode := testcase.expect.Head
-		for outputNode != nil || expectNode != nil {
-			if outputNode.Value != expectNode.Value {
-				t.Errorf("Case %d failed: wrong values", index)
-			}
-			outputNode = outputNode.Next
-			expectNode = expectNode.Next
-			if (outputNode == nil) != (expectNode == nil) {
-				t.Fatalf("Case %d failed: wrong length", index)
-				break
-			}
+		passed := Compare2Lists(testcase.input, testcase.expect)
+		if !passed {
+			t.Errorf("Case %d failed", index)
 		}
 	}
 }
