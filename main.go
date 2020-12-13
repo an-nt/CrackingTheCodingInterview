@@ -1,15 +1,29 @@
 package main
 
 import (
-	"CodingInterview/recursion"
 	"fmt"
-	"time"
 )
 
 func main() {
-	start := time.Now()
 	fmt.Println("Cracking the coding interview")
-	fmt.Println(recursion.Fibonacci_Memory(100, make([]int, 101)))
+	// n, q := codesignal.GenerateCase(100000, 1, 300000)
 
-	fmt.Println(time.Since(start))
+	// start1 := time.Now()
+	// fmt.Println(codesignal.SumInRange(n, q))
+	// fmt.Println(time.Since(start1))
+
+	// start2 := time.Now()
+	// fmt.Println(codesignal.SumInRange_Prefix(n, q))
+	// fmt.Println(time.Since(start2))
+
+	// start3 := time.Now()
+	// fmt.Println(codesignal.SumInRange_Prefix_Advance(n, q))
+	// fmt.Println(time.Since(start3))
+
+	// start4 := time.Now()
+	// fmt.Println(codesignal.SumInRange_Prefix_Super(n, q))
+	// fmt.Println(time.Since(start4))
+	arr := []int{0, 1, 2, 3, 4, 5}
+	fmt.Println(arr[6:])
+	fmt.Println(arr[:6])
 }
