@@ -5,17 +5,15 @@ func SelectionSort(Arr []int) {
 		return
 	}
 	for i := 0; i < len(Arr)-1; i++ {
-		minindex := i + 1
+		minindex := i
 		minvalue := Arr[minindex]
 
-		for j := i + 1; j < len(Arr); j++ {
+		for j := i; j < len(Arr); j++ {
 			if minvalue > Arr[j] {
 				minindex = j
 				minvalue = Arr[minindex]
 			}
 		}
-		if Arr[i] > Arr[minindex] {
-			Arr[i], Arr[minindex] = Arr[minindex], Arr[i]
-		}
+		Arr[i], Arr[minindex] = Arr[minindex], Arr[i]
 	}
 }
